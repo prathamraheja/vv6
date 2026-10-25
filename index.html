@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Baturi — From Bhatura ✦</title>
+<style>
+:root{--white:#f7f4ff;--soft:#d8d1f2;--lav:#c9b8ff;--line:#ffffff27;--glass:#11122dcc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--white);font-family:ui-rounded,"Segoe UI",system-ui,sans-serif;background:#070817;overflow-x:hidden}
+#space{position:fixed;inset:0;z-index:-3;background:radial-gradient(ellipse at 20% 15%,#4a2d78 0,transparent 36%),radial-gradient(ellipse at 85% 45%,#163f68 0,transparent 35%),radial-gradient(ellipse at 50% 100%,#39205e 0,transparent 42%),#070817}
+.stars,.stars:before,.stars:after{position:fixed;inset:-100px;content:"";pointer-events:none;background-image:radial-gradient(2px 2px at 40px 70px,#fff,transparent),radial-gradient(1px 1px at 120px 160px,#cbd7ff,transparent),radial-gradient(1.5px 1.5px at 220px 40px,#fff,transparent),radial-gradient(1px 1px at 310px 120px,#e3caff,transparent);background-size:360px 240px;animation:drift 75s linear infinite;opacity:.75;z-index:-2}
+.stars:before{animation-duration:110s;transform:scale(1.4);opacity:.4}.stars:after{animation-duration:140s;transform:scale(.8);opacity:.55}
+@keyframes drift{to{translate:0 -240px}}
+.wrap{width:min(820px,92vw);margin:auto;padding:26px 0 50px}
+nav{display:flex;justify-content:space-between;align-items:center;color:#c7bee8;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+nav span:last-child{letter-spacing:0;text-transform:none;border:1px solid var(--line);border-radius:30px;padding:8px 12px}
+.hero{min-height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:35px 8px}
+.scene{width:210px;height:160px;position:relative;margin-bottom:10px}
+.planet{position:absolute;width:105px;height:105px;left:45px;top:24px;border-radius:50%;background:radial-gradient(circle at 28% 24%,#f4e5ff,#b7a1ff 23%,#7162bf 52%,#202856 80%);box-shadow:0 0 38px #b5a0ff66,0 0 90px #647cff2c}
+.orbit{position:absolute;width:185px;height:64px;border:1px solid #d9d0ffad;border-radius:50%;left:5px;top:45px;transform:rotate(-23deg);animation:orbit 12s linear infinite}
+@keyframes orbit{to{transform:rotate(337deg)}}
+.astronaut{position:absolute;right:2px;top:0;font-size:42px;filter:drop-shadow(0 0 13px #d7c6ff);animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-7deg)}50%{transform:translateY(-12px) rotate(5deg)}}
+.tiny-star{position:absolute;font-size:19px;animation:twinkle 2.6s ease-in-out infinite alternate}.s1{left:8px;top:20px}.s2{right:0;bottom:22px;animation-delay:.8s}.s3{left:25px;bottom:4px;animation-delay:1.3s}
+@keyframes twinkle{from{opacity:.3;transform:scale(.8)}to{opacity:1;transform:scale(1.2)}}
+.kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#d8caff}
+h1{font-size:clamp(2.7rem,8vw,5rem);letter-spacing:-.06em;line-height:.99;margin:16px 0}
+h1 em{font-style:normal;color:#c8b8ff}
+.intro{max-width:540px;line-height:1.8;color:var(--soft);font-size:1rem}
+.btn{display:inline-block;margin-top:20px;border:1px solid #d9d0ff72;border-radius:50px;padding:12px 19px;color:white;text-decoration:none;background:linear-gradient(120deg,#7865b95c,#386da35c);transition:.2s}.btn:hover{transform:translateY(-2px)}
+.panel{background:var(--glass);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,5vw,36px);backdrop-filter:blur(12px);box-shadow:0 18px 70px #0002;margin:22px 0}
+.tag{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#c7b8ff;margin-bottom:12px}
+h2{font-size:clamp(1.55rem,4vw,2.15rem);letter-spacing:-.035em;margin:0 0 17px}
+p{font-size:.98rem;line-height:1.82;color:#e3def8;margin:12px 0}
+.salutation{color:#fff;font-size:1.1rem}
+.quote{border-left:2px solid #b7a5ff;padding:3px 0 3px 16px;margin:19px 0;color:#f0eaff;line-height:1.8}
+.sign{font-size:1.08rem;color:#d5c8ff;line-height:1.7;margin-top:22px}
+.invite{text-align:center;padding:clamp(24px,5vw,40px)}.symbol{font-size:1.8rem;filter:drop-shadow(0 0 12px #b9a8ff)}
+footer{text-align:center;color:#9f98c4;font-size:.78rem;line-height:1.8;padding:22px 0}
+@media(max-width:600px){nav span:last-child{display:none}.hero{min-height:64vh}.scene{transform:scale(.9);margin-bottom:0}}
+</style>
+</head>
+<body>
+<div id="space"></div><div class="stars"></div>
+<div class="wrap">
+<nav><span>✦ Galaxy Team</span><span>from Bhatura, for Baturi</span></nav>
+<header class="hero">
+  <div class="scene" aria-label="An astronaut floating beside a glowing planet">
+    <div class="planet"></div><div class="orbit"></div><div class="astronaut">👩🏻‍🚀</div>
+    <div class="tiny-star s1">✦</div><div class="tiny-star s2">✧</div><div class="tiny-star s3">⋆</div>
+  </div>
+  <div class="kicker">a little letter from me to you</div>
+  <h1>For my <em>Baturi.</em></h1>
+  <p class="intro">I wanted to put my thoughts into words gently, because you matter to me and I don't want one difficult conversation to speak for everything between us.</p>
+  <a class="btn" href="#letter">Read my letter ↓</a>
+</header>
+<main>
+<section class="panel" id="letter">
+  <div class="tag">just between us</div>
+  <h2>What I wanted you to understand</h2>
+  <p class="salutation">My Baturi,</p>
+  <p>Last night, I wanted to watch a movie with you because it’s rare for me to suggest one, and I was looking forward to spending that time together. When you told me you were overwhelmed and feeling guilty about studying, I tried to reassure you that it’s okay to have difficult days and take a break. I wasn’t trying to pull you away from CAT prep. I’ve been encouraging you to study and giving you wake-up calls because I genuinely want to support you and see you do well. I thought a movie might help you unwind for a little while.</p>
+  <p>When you said you felt “suffocated,” I reacted by interrupting you to ask what you meant. I was confused and wanted to understand, not dismiss what you were saying. But I should have let you finish first, and I’m sorry I didn’t.</p>
+  <p>What hurt me was that after I apologised, we stopped talking and I couldn’t reach you. I know the word I interrupted you over may have meant something important to you, and I do want to understand it. At the same time, we both sometimes interrupt each other or misunderstand something in everyday conversations, and usually we apologise, clear it up, and move forward. I honestly didn’t expect this to leave us disconnected like this, and it’s been painful especially because I’ve only ever wanted to be someone who supports you, not someone who adds pressure.</p>
+  <p>I’m not saying this to minimise how you felt. I’m sorry for interrupting you, and I want to listen properly to what you were trying to tell me. I just hope we can give each other a little patience when things go wrong, and try to talk things through rather than letting one difficult moment come between us.</p>
+  <p>I love you, Baturi. I want to understand your side, and I hope you can understand mine too. We don’t have to see every moment the same way to be gentle with each other.</p>
+  <p class="sign">Love,<br>your Bhatura ♡</p>
+</section>
+<section class="panel invite">
+  <div class="symbol">✦ ☾ ✦</div>
+  <div class="tag">one conversation at a time</div>
+  <h2>Can we talk?</h2>
+  <p>I want to hear what you meant last night, and I want to explain my side calmly too. I’ll try to listen without interrupting. We can talk honestly and kindly, because you and us are important to me.</p>
+  <p>Whenever we talk, I hope we can meet each other with a little patience and love.</p>
+  <a class="btn" href="mailto:?subject=Can%20we%20talk%3F">Let's talk ♡</a>
+</section>
+</main>
+<footer>Made with love by Bhatura for Baturi.<br>✦ A little more understanding, together. ✦</footer>
+</div>
+</body>
+</html>
